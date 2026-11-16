@@ -10,6 +10,7 @@
     | :--- | :--- | :--- | :--- | :--- | :--- |
     | Hồ Anh Tuấn | 0359223336 | htuan@gmail.com | Backend Developer | 2 | Python, SQL, FastAPI |
   * Output (JSON):
+  ```
     {
       "name": "Hồ Anh Tuấn",
       "phone": "0359223336",
@@ -18,3 +19,4 @@
       "experience_years": 2,
       "skills": ["Python", "SQL", "FastAPI"]
     }
+```
