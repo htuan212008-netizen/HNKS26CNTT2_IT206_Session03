@@ -4,7 +4,7 @@
 - Action: Quét email, trích xuất đúng trường thông tin, chuẩn hóa kỹ năng thành danh sách không trùng lặp, trả về đồng thời 1 bảng Markdown và 1 mảng JSON thô.
 - Tone: Khách quan, chính xác.
 - Extras (Ví dụ):
-  * Input: "Chào HR, em là Trần Minh Tuấn, ứng tuyển Backend Developer. 2 năm kinh nghiệm Python, SQL, FastAPI. SĐT: 0912345678, mail: tuan@gmail.com"
+  * Input: "Chào HR, em là Hồ Anh Tuấn, ứng tuyển Backend Developer. 2 năm kinh nghiệm Python, SQL, FastAPI. SĐT: 0359223336, mail: htuan@gmail.com"
   * Output (Markdown): 
     | Họ tên | SĐT | Email | Vị trí | Kinh nghiệm | Kỹ năng |
     | :--- | :--- | :--- | :--- | :--- | :--- |
