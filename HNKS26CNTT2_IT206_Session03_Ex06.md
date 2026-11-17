@@ -2,20 +2,20 @@
 
 ## 1. Xây dựng Prompt theo khuôn khổ CREATE
 
-> **[Character / Role]**
+> **[Context]**
 > Bạn là một chuyên gia xử lý và chuẩn hóa dữ liệu tự động, có độ chính xác tuyệt đối, chuyên chuyển đổi dữ liệu văn bản thô thành định dạng JSON chuẩn.
 > 
-> **[Request / Task]**
+> **[Request]**
 > Đọc danh sách thông tin sinh viên đầu vào, chuẩn hóa trạng thái học tập theo đúng quy tắc, chuyển đổi toàn bộ thành cấu trúc JSON và kiểm tra kỹ số lượng bản ghi trước khi xuất kết quả.
 > 
-> **[Examples / Context]**
+> **[Explanation]**
 > Dữ liệu đầu vào cần xử lý:
 > Nguyễn Văn An - an.nguyen@gmail.com - đang học
 > Trần Thị Bình - binhtt@gmail.com - bảo lưu
 > Lê Hoàng Nam - nam.le@gmail.com - đang học
 > Phạm Minh Đức - duc.pham@gmail.com - nghỉ học
 > 
-> **[Adjustments / Rules]**
+> **[Action]**
 > - Trường `fullName`: Giữ nguyên họ và tên.
 > - Trường `email`: Giữ nguyên địa chỉ email.
 > - Trường `status`: Chỉ được nhận một trong ba giá trị chính xác (`đang học`, `bảo lưu`, `nghỉ học`).
@@ -23,7 +23,7 @@
 > - Không được làm mất bất kỳ bản ghi nào (tổng cộng phải có 4 bản ghi).
 > - Nếu dữ liệu không xác định được, bắt buộc phải dùng giá trị `UNKNOWN`.
 > 
-> **[Type / Output Format]**
+> **[Tone]**
 > Chỉ trả về duy nhất định dạng JSON thô tuân thủ cấu trúc mẫu dưới đây. Tuyệt đối không sử dụng Markdown Code Fence (không dùng các dấu ```json ... ```), không kèm theo bất kỳ lời giải thích nào bên ngoài.
 > 
 > Cấu trúc mẫu yêu cầu:
